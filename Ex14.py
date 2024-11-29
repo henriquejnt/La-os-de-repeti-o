@@ -1,6 +1,6 @@
-acumulador = 0
-maior_menor = []
 while True:
+    acumulador = 0
+    maior_menor = []
     print('=-'*20)
     nome_atleta = input('Nome do atleta: ')
     if nome_atleta == "":
@@ -10,10 +10,10 @@ while True:
             acumulador += 1
             saltos = float(input(f"{acumulador} salto: "))
             maior_menor.append(saltos)
-            maior = max(maior_menor)
-            menor = min(maior_menor)
     maior_menor.remove(max(maior_menor))
     maior_menor.remove(min(maior_menor))
+    maior = max(maior_menor)
+    menor = min(maior_menor)
     media = sum(maior_menor)/3
     print(f"Melhor salto: {maior}")
     print(f"Pior salto: {menor}")
